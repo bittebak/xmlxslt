@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TransPortOrderAmazon>
+    <FromAddress>
+        <AddressLine1>Floraweg 23</AddressLine1>
+        <City>Hoensbroek</City>
+        <zip>1234AA</zip>
+    </FromAddress>
+    <ToAddress>
+        <AddressLine1>Floraweg 23</AddressLine1>
+        <City>Hoensbroek</City>
+        <zip>1234AA</zip>
+    </ToAddress> 
+    <Goods>
+        <NrOfPallets>6</NrOfPallets>
+        <Description>Tulips, red</Description>
+    </Goods>
+</TransPortOrderAmazon>
