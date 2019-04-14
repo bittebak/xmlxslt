@@ -1,34 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Order>
-	<OntvangsDatum>20190414</OntvangsDatum>
-	<Afzender>KC</Afzender>
-	<Transport>
+<!--Attributes -->
+	<Transport id="T1">
 		<Omschrijving>Standaard</Omschrijving>
 		<Inhoud>
 			<type>EUR-pallet</type>
 			<aantal>25</aantal>
 		</Inhoud>
 	</Transport>
-	<Transport>
+	<Transport id="T2">
 		<Omschrijving>Gekoeld</Omschrijving>
 		<Inhoud>
 			<type>EUR-pallet</type>
-			<aantal>15</aantal>
+			<aantal>15</aantal>	
 		</Inhoud>
 	</Transport>
-	<Transport>
+	<Transport id="T3">
 		<Omschrijving>Niet Verzekerd</Omschrijving>
 		<Inhoud>
 			<type>EUR-pallet</type>
 			<aantal>1</aantal>
 		</Inhoud>
 	</Transport>
-	<Transport>
+	<Transport id="T4">
 		<Omschrijving>Verzerkerd 100.000</Omschrijving>
 		<Inhoud>
 			<type>EUR-pallet</type>
-			<aantal>5</aantal>
-			<verzekerd-bedrag>100.00</verzekerd-bedrag>
+			<aantal>5</aantal>	
 		</Inhoud>
 	</Transport>
 </Order>
