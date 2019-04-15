@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2019r3 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties SelectedLanguage="builtin"/>
+		<structure>
+			<children>
+				<component name="tmp0000" library="xml" uid="3" kind="14">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="512" rbx="702" rby="200"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="Order" expanded="1">
+										<entry name="Inhoud" expanded="1"/>
+										<entry name="aantal" inpkey="1"/>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\xsd-1\tmp0000.xsd" outputinstance="..\xsd-1\tmp0000.xml" instanceroot="{}Order"/>
+					</data>
+				</component>
+				<component name="PurchaseOrder" library="xml" uid="2" kind="14">
+					<properties/>
+					<view rbx="220" rby="200"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace uid="http://www.yellowtwig.nl/training/xmlxslt"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="PurchaseOrder" expanded="1">
+										<entry name="OrderLines" expanded="1">
+											<entry name="OrderLine" expanded="1">
+												<entry name="Quantity" outkey="2"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\xsd-1\PurchaseOrder.xsd" outputinstance="..\xsd-1\PurchaseOrder.xml" instanceroot="{http://www.yellowtwig.nl/training/xmlxslt}PurchaseOrder"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges/>
+				<vertices>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="1"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

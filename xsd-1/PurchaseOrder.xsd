@@ -4,10 +4,10 @@
 	<xs:complexType name="PurchaseOrderType">
 		<xs:sequence>
 			<xs:element name="CreatedOn" type="xs:date"/>
-			<xs:element name="OrderLines" maxOccurs="10">
+			<xs:element name="OrderLines">
 				<xs:complexType>
 					<xs:sequence>
-						<xs:element name="OrderLine">
+						<xs:element name="OrderLine" maxOccurs="10">
 							<xs:complexType>
 								<xs:sequence>
 									<xs:element name="ProductName"/>
@@ -25,6 +25,14 @@
 						<xs:enumeration value="Standard"/>
 						<xs:enumeration value="NextDay"/>
 						<xs:enumeration value="SameDay"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="insuredValue">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1000"/>
+						<xs:maxInclusive value="100000"/>
 					</xs:restriction>
 				</xs:simpleType>
 			</xs:element>

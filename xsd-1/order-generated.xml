@@ -5,5 +5,6 @@
 	<Inhoud>
 		<type>EUR-pallet</type>
 		<aantal>25</aantal>
+		<gewicht>2</gewicht>
 	</Inhoud>
 </Order>

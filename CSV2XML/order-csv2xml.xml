@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+   // Example of a template. The template is used for EACH line of the CSV file
+// and should NOT contain a document declaration:
+
+   <person id="OrderID">
+      <first-name>transportDate</first-name>
+      <last-name>linenr</last-name>
+      <address>
+         <street>type</street>
+         <city>amount</city>
+         <state>##6##</state>
+         <country>##7##</country>
+         <zip>##8##</zip>
+      </address>
+   </person>
+   // Example of a template. The template is used for EACH line of the CSV file
+// and should NOT contain a document declaration:
+
+   <person id="OID1">
+      <first-name>20190415</first-name>
+      <last-name>1</last-name>
+      <address>
+         <street>EUR-pallet</street>
+         <city>25</city>
+         <state>##6##</state>
+         <country>##7##</country>
+         <zip>##8##</zip>
+      </address>
+   </person>
+   // Example of a template. The template is used for EACH line of the CSV file
+// and should NOT contain a document declaration:
+
+   <person id="OID1">
+      <first-name>20190416</first-name>
+      <last-name>2</last-name>
+      <address>
+         <street>EUR-pallet</street>
+         <city>42</city>
+         <state>##6##</state>
+         <country>##7##</country>
+         <zip>##8##</zip>
+      </address>
+   </person>
+   // Example of a template. The template is used for EACH line of the CSV file
+// and should NOT contain a document declaration:
+
+   <person id="OID1">
+      <first-name>20190416</first-name>
+      <last-name>3</last-name>
+      <address>
+         <street>Box</street>
+         <city>250</city>
+         <state>##6##</state>
+         <country>##7##</country>
+         <zip>##8##</zip>
+      </address>
+   </person>
+</document>

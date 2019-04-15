@@ -1,0 +1,4 @@
+OrderID, transportDate, linenr, type, amount
+OID1, 20190415, 1, EUR-pallet, 25
+OID1, 20190416, 2, EUR-pallet, 42
+OID1, 20190416, 3, Box, 250
