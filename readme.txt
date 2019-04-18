@@ -10,4 +10,8 @@ Select XML
 Menu>XLS/XSL Transformation (F10)
 
 *Generate XML*
-Menu>DTD/Sche
+Menu>DTD/Schema/Generate sample XML
+
+*** MapForce ***
+*Generate Code*
+Menu>File/Generate Code In/XSLT 2.0

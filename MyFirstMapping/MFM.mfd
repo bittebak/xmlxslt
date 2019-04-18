@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2019r3 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties SelectedLanguage="builtin"/>
+		<structure>
+			<children>
+				<component name="inputschema" library="xml" uid="2" kind="14">
+					<properties/>
+					<view rbx="231" rby="200"/>
+					<data>
+						<root scrollposition="90">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="OrderInput" expanded="1">
+										<entry name="Description" outkey="1" expanded="1">
+											<entry name="#text" outkey="2"/>
+										</entry>
+										<entry name="Location" expanded="1">
+											<entry name="Country" outkey="3">
+												<entry name="#text" outkey="4"/>
+											</entry>
+											<entry name="Street" expanded="1">
+												<entry name="#text" outkey="5"/>
+											</entry>
+											<entry name="Nr" expanded="1">
+												<entry name="#text" outkey="6"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\MyFirstSchema\inputschema.xsd" outputinstance="..\MyFirstSchema\inputschema.xml" instanceroot="{}OrderInput"/>
+					</data>
+				</component>
+				<component name="3GOrder" library="xml" uid="3" kind="14">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="490" rbx="753" rby="200"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="ThreeGOrder" expanded="1">
+										<entry name="Description" inpkey="7" expanded="1">
+											<entry name="#text" inpkey="8"/>
+										</entry>
+										<entry name="Destination" expanded="1">
+											<entry name="Address" inpkey="9"/>
+											<entry name="City" inpkey="10">
+												<entry name="#text" inpkey="11"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\MyFirstSchema\3GOrder.xsd" outputinstance="..\MyFirstSchema\3GOrder.xml" instanceroot="{}ThreeGOrder"/>
+					</data>
+				</component>
+				<component name="concat" library="core" uid="5" kind="5" growable="1" growablebasename="value">
+					<properties/>
+					<sources>
+						<datapoint pos="0" key="12"/>
+						<datapoint pos="1" key="13"/>
+					</sources>
+					<targets>
+						<datapoint pos="0" key="14"/>
+					</targets>
+					<view ltx="315" lty="146" rbx="392" rby="205"/>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="7">
+						<data>
+							<dataconnection type="1"/>
+						</data>
+					</edge>
+					<edge edgekey="10">
+						<data>
+							<dataconnection type="1"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="7" edgekey="7"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="2">
+						<edges>
+							<edge vertexkey="8"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="14">
+						<edges>
+							<edge vertexkey="9"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="3">
+						<edges>
+							<edge vertexkey="10" edgekey="10"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="4">
+						<edges>
+							<edge vertexkey="11"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="5">
+						<edges>
+							<edge vertexkey="12"/>
+						</edges>
+					</vertex>
+					<vertex vertexkey="6">
+						<edges>
+							<edge vertexkey="13"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

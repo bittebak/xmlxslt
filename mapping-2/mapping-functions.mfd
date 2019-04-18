@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited with Altova MapForce 2019r3 -->
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="22">
+	<resources/>
+	<component name="defaultmap" uid="1" editable="1" blackbox="0">
+		<properties SelectedLanguage="builtin"/>
+		<structure>
+			<children>
+				<component name="PurchaseOrder" library="xml" uid="2" kind="14">
+					<properties/>
+					<view rbx="213" rby="200"/>
+					<data>
+						<root>
+							<header>
+								<namespaces>
+									<namespace uid="http://www.yellowtwig.nl/training/xmlxslt"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="PurchaseOrder" expanded="1">
+										<entry name="OrderLines" expanded="1">
+											<entry name="OrderLine" outkey="1" expanded="1"/>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\xsd-1\PurchaseOrder.xsd" outputinstance="..\xsd-1\PurchaseOrder.xml" instanceroot="{http://www.yellowtwig.nl/training/xmlxslt}PurchaseOrder"/>
+					</data>
+				</component>
+				<component name="PurchaseOrder" library="xml" uid="3" kind="14">
+					<properties XSLTDefaultOutput="1"/>
+					<view ltx="322" rbx="535" rby="200"/>
+					<data>
+						<root scrollposition="1">
+							<header>
+								<namespaces>
+									<namespace uid="http://www.yellowtwig.nl/training/xmlxslt"/>
+									<namespace uid="http://www.altova.com/mapforce"/>
+								</namespaces>
+							</header>
+							<entry name="FileInstance" ns="1" expanded="1">
+								<entry name="document" ns="1" expanded="1" casttotargettypemode="cast-in-subtree">
+									<entry name="PurchaseOrder" expanded="1">
+										<entry name="OrderLines" expanded="1">
+											<entry name="OrderLine" inpkey="2" expanded="1">
+												<entry name="ProductName" expanded="1"/>
+											</entry>
+										</entry>
+									</entry>
+								</entry>
+							</entry>
+						</root>
+						<document schema="..\xsd-1\PurchaseOrder.xsd" outputinstance="..\xsd-1\PurchaseOrder.xml" instanceroot="{http://www.yellowtwig.nl/training/xmlxslt}PurchaseOrder"/>
+					</data>
+				</component>
+			</children>
+			<graph directed="1">
+				<edges>
+					<edge edgekey="2">
+						<data>
+							<dataconnection type="2"/>
+						</data>
+					</edge>
+				</edges>
+				<vertices>
+					<vertex vertexkey="1">
+						<edges>
+							<edge vertexkey="2" edgekey="2"/>
+						</edges>
+					</vertex>
+				</vertices>
+			</graph>
+		</structure>
+	</component>
+</mapping>

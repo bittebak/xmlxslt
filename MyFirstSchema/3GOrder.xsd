@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2019 rel. 3 (x64) (http://www.altova.com) by Mr Me (YT) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
+	<xs:element name="ThreeGOrder">
+		<xs:annotation>
+			<xs:documentation>The Order that goes in 3GTMS</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Description"/>
+				<xs:element name="Destination">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Address">
+								<xs:annotation>
+									<xs:documentation>Street + nr</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="ZipCode"/>
+							<xs:element name="City"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

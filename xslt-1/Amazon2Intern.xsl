@@ -6,11 +6,6 @@
     <xsl:output method="xml" version="1.0"
         encoding="UTF-8" indent="yes"/>
     <xsl:template match="/" >  
-        <InterneOrder>
-            <vanAdres>
-                <straat><xsl:value-of select="//TransPortOrderAmazon/FromAddress/AddressLine1/text()" /></straat>
-                <plaats><xsl:value-of select="//TransPortOrderAmazon/ToAddress/City/text()" /></plaats>
-            </vanAdres>
-        </InterneOrder>
+       
     </xsl:template>
 </xsl:stylesheet>

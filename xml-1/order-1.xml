@@ -2,6 +2,7 @@
 <Order>
 	<Omschrijving>Spoed order</Omschrijving>
 	<Inhoud>
-	<type>EUR-pallet</type></Inhoud>
+	<type>EUR-pallet</type>
+	</Inhoud>
 	<aantal>25</aantal>
 </Order>
